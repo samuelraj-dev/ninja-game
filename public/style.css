@@ -1,0 +1,139 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+}
+
+.wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#score {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+#restart {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: red;
+  border: none;
+  font-weight: 700;
+  font-size: 1.2em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
+  cursor: pointer;
+}
+
+#splash {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: none;
+  font-weight: 700;
+  font-size: 1.2em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#introduction {
+  width: 200px;
+  margin-bottom: 1.5rem;
+  /* position: absolute; */
+  font-weight: 600;
+  font-size: 0.8em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  transition: opacity 2s;
+}
+
+#perfect {
+  position: absolute;
+  display: none;
+  transition: opacity 2s;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  left: 350px;
+  top: 50%;
+  transform: translateY(-50%);
+  gap: 12px;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  border: 2px solid red;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 160px;
+  text-align: center;
+  background: black;
+  color: white;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.4);
+}
+
+button:hover {
+  background: red;
+  color: black;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.6);
+}
+
+#playBtn {
+  border-color: #ff1e1e;
+}
+
+#loginBtn {
+  border-color: #ff3b3b;
+  display: none;
+}
+
+button:last-child {
+  border-color: #ff5e5e;
+}
+

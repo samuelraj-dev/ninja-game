@@ -1,0 +1,173 @@
+                                                                                                                                             
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+
+ body
+{ 
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+}
+ 
+
+.FULL
+{
+  width: 450px;
+  background-color:transparent;
+  border: 3px solid rgba(255, 255, 255, .2);
+  backdrop-filter:blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  color: white;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+ 
+
+
+
+.FULL h1
+{
+    font-size: 36px;
+    text-align: center;
+    
+}
+ /*the styles for input boxes*/
+
+.FULL .input-box
+{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;  
+}
+
+.input-box input
+{
+   width: 100%;
+   height: 100%;
+   background: transparent; 
+   border: none;
+   outline: none;
+   border: 2px solid rgba(255, 255, 255, .2);
+   border-radius:  40px; 
+   font-size: 16px;
+   color: white;
+   padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+  color: aliceblue;
+}
+
+.input-box i{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px
+
+}
+
+/* styles for remember and forget password*/
+.FULL .R-F
+{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5 px;
+  margin: -15px 0 15px;
+}
+.R-F label input
+{
+  accent-color:#fff;
+  text-decoration: none;
+}
+
+.R-F a
+{
+text-decoration:none;
+color:#fff;
+}
+
+.R-F a:hover
+{
+ text-decoration: underline;
+}
+ 
+/*button*/
+.FULL .btn
+{
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.FULL .reg-link
+{
+font-size: 15px;
+text-align: center;
+margin-top: 20px;
+}
+
+.reg-link p a
+{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1000 px;
+  font-weight: bolder;
+}
+
+.reg-link p a:hover
+{
+text-decoration: underline;
+}
+.back
+{
+position:absolute;
+right: 100;
+bottom: 0;
+z-index: -1;
+}
+.back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.back {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (min-aspect-ratio:16/9){
+   .back{
+    width: 100%;
+    height: auto;
+   }
+}

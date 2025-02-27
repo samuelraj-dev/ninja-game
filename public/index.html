@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title>Ninja Stick Game</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div id="score"></div>
+            <canvas id="game" width="375" height="375"></canvas>
+            <!-- <div id="introduction">Hold down the mouse to stretch out a stick</div> -->
+            <div id="perfect">DOUBLE SCORE</div>
+            <button id="restart">RESTART</button>
+        </div>
+        
+        <div id="splash">
+            <div id="introduction">Hold down the mouse to stretch out a stick</div>
+            <div class="btn-container">
+                <button id="playBtn">Play</button>
+                <button id="loginBtn" onclick="window.location.href='/login'">Login</button>
+                <div id="profile" style="display: none; flex-direction: column;">
+                    <!-- <img id="profile-pic" src="" alt="Profile Picture" width="100"> -->
+                    <p id="username"></p>
+                    <button onclick="logout()">Logout</button>
+                    <button onclick="window.location.href='/scoreboard'">Scoreboard</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="auth.js"></script>
+</body>
+</html>

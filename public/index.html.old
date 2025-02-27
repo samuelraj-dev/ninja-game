@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <title>Home</title>
+</head>
+<body>
+    <div class="btn-container">
+        <button id="playBtn" onclick="startGame()">Play</button>
+        <button id="loginBtn" onclick="loginPage()">Login</button>
+        <button id="scoreBtn">Score</button>
+    </div>
+
+    <script>
+        function startGame() {
+            window.location.href = "game.html"; 
+        }
+
+        function loginPage() {
+            window.location.href = "login.html"; 
+        }
+    </script>
+    <!-- <script src="login.js"></script> -->
+</body>
+</html>
