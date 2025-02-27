@@ -5,8 +5,12 @@ const router = express.Router();
 
 router.get("/", async (req, res) => {
     try {
-        const scores = await Score.find({ userId: req.session.user.id }).sort({ points: -1, date: -1 });
-        const highest = scores.length > 0 ? scores[0].points : 0;
+        const scores = await Score.find({ userId: req.session.user.id }).sort({ date: -1 });
+        const highestScore = await Score.findOne({ userId: req.session.user.id })
+            .sort({ points: -1 })
+            .select("points");
+
+        const highest = highestScore ? highestScore.points : 0;
 
         res.json({ highest, scores });
     } catch (error) {
