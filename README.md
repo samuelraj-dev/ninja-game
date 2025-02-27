@@ -1,24 +1,40 @@
-Steps to setup the repo:
+# Project Setup Guide
 
-Step 1: (Installing pnpm package manager)
+Follow these steps to set up and run the project locally.
 
-Run the following commands:
+## Prerequisites
 
+- **Node.js** (Ensure you have Node.js installed)
+- **pnpm** (Package manager)
+
+## Steps to Set Up the Repository
+
+### Step 1: Install `pnpm`
+
+Run the following commands to install `pnpm` globally and install dependencies:
+
+```sh
 npm install -g pnpm
 pnpm install
+```
 
-Step 2: (Environmental Variables)
+### Step 2: Configure Environment Variables
 
-Create .env file in the root of the project, and add the following variables:
+Create a `.env` file in the root of the project and add the following variables:
 
+```ini
 PORT=5000
 MONGO_URI="<your-mongo-uri>"
 SECRET_KEY="mFO8343#$QKRFNWI#" # Can be any random unguessable string
+```
 
-Step 3: (Run the application)
+### Step 3: Run the Application
 
-Run the following command:
+Start the application using:
 
+```sh
 pnpm dev
+```
 
-now the application is running at http://localhost:5000
+The application will now be running at: 
+now the application is running at [http://localhost:5000](http://localhost:5000)
